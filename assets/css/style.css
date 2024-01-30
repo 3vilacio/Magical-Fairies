@@ -1,1 +1,195 @@
 @import './all.css';
+
+/*----------------------------------------------------- Header de navegação-----------------------------------------------------*/
+
+header {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    padding: 0% 2%;
+    border: 3px solid;
+    border-color: #ff007765;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header_btn button {
+    height: 50px;
+    width: 180px;
+    font-size: 20px;
+    color: #FF0077;
+    border-radius: 10px;
+    border-color: #FF0077;
+}
+
+/* FIM Header de navegação*/
+
+/*-----------------------------------------------------MAIN--------------------------------------------------------------*/
+.content {
+    border: 3px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/**/
+section.slider {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.slider_content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider_content input {
+    display: none;
+}
+
+/*galeria*/
+
+.slide_box {
+    width: 50%;
+    height: auto;
+    position: relative;
+    transition: 1s;
+}
+
+.slide_box img {
+    width: 240px;
+    border: 1px solid #eee;
+}
+
+/*btns*/
+
+.nav_manual,
+.nav_auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 20%;
+    display: flex;
+    /*posição dos radios*/
+    justify-content: center;
+}
+
+.nav_manual .manual_btn,
+.nav_auto div {
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav_manual .manual_btn:not(:last-child),
+.nav_auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav_manual .manual_btn:hover {
+    background-color: #ff005594;
+}
+
+/*efeito de checked btn*/
+
+#slide1:checked~.nav_auto .auto_btn1 {
+    background-color: #ec4899;
+}
+
+#slide2:checked~.nav_auto .auto_btn2 {
+    background-color: #ec4899;
+}
+
+#slide3:checked~.nav_auto .auto_btn3 {
+    background-color: #ec4899;
+}
+
+#slide4:checked~.nav_auto .auto_btn4 {
+    background-color: #ec4899;
+}
+
+#slide5:checked~.nav_auto .auto_btn5 {
+    background-color: #ec4899;
+}
+
+#slide6:checked~.nav_auto .auto_btn6 {
+    background-color: #ec4899;
+}
+
+
+/*efeito slider*/
+
+slide1:checked~.one {
+    margin-left: 0%;
+}
+
+slide2:checked~.one {
+    margin-left: -25%;
+}
+
+slide3:checked~.one {
+    margin-left: -50%;
+}
+
+slide4:checked~.one {
+    margin-left: -75%;
+}
+
+slide5:checked~.one {
+    margin-left: -100%;
+}
+
+slide6:checked~.one {
+    margin-left: -105%;
+}
+
+
+
+/*-----------------------------------------------------SECTON-BOTTOM-----------------------------------------------------*/
+.main_bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    overflow: hidden;
+}
+
+
+
+.section_img_left img {
+    width: 250px;
+    height: 250px;
+}
+
+.section_span {
+
+    font-size: 26px;
+    width: 600px;
+    color: white;
+}
+
+.section_img_right img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/*-----------------------------------------------------FOOTER-----------------------------------------------------*/
