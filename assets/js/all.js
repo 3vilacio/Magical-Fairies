@@ -1,19 +1,36 @@
 /* Efeito Carrossel  da página index*/
 
-var btn = document.querySelector('.manual_btn') /* criação da variável que receberá a classe através da busca do query.. */
-var cont = 1
+let time = 4000,
+    currentImageIndex = 0,
+    images = document.querySelectorAll("#slider img")
+max = images.length; //Qtde máxima de imgs 
 
-document.getElementById('slide1').checked = true/* Marcar o slide1 como ativo(clicado)*/
-setInterval(() => { /* efeito de passagem de imagem */
-    proximaImg()
-}, 3000) /* depois de 5s passará para a outra img */
 
-function proximaImg() {
-    cont++/* verificador de posição de img(qual img está selecionada) */
+function nexImage() {
 
-    if (cont > 6) {
-        cont = 1
-    }
-    document.getElementById('slide' + cont).checked = true
+    images[currentImageIndex]
+        .classList.remove("selected")
+
+    currentImageIndex++
+
+    if (currentImageIndex >= max)
+        currentImageIndex = 0
+
+    images[currentImageIndex]
+        .classList.add("selected")
 
 }
+
+
+function start() {
+    setInterval(() => {
+        //troca de imagem
+        nexImage()
+    }, time)
+
+}
+
+window.addEventListener("load", start) // quando a window for totalmente carreda, vai ser dado o start
+
+/*Efeito carrosel dos depoimentos*/
+

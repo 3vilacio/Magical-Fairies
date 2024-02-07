@@ -6,104 +6,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./plugins/icones/fontawesome/css/all.min.css">
     <script src="./assets/js/all.js" defer></script>
     <title>Magical Faires</title>
 </head>
 
 <body>
-    <!-- Header de navegação-->
+    <!-- Start Header -->
     <header>
-
+        <!-- Start logo-->
         <div class="logo">
-            <img src="./assets/img/landing_page/header/logo1.svg">
+            <a href="#"><img src="./assets/img/landing_page/header/logo1.svg"></a>
         </div>
 
-        <div class="header_btn">
-            <button>Login</button>
-            <button>Cadastrar</button>
+        <!-- End logo-->
+
+        <!-- Start btns nav-->
+
+        <div class="search">
+
+            <!--Start search_box-->
+            <form class="search_box" action="" method="">
+                <input type="text" name="" value="" placeholder="Pesquisar">
+                <button class="search_btn" type="button" name="button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <!--End search_box-->
         </div>
 
     </header>
-    <!--FIM header-->
-
-    <main class="content">
-
-        <section class="slider">
-            <!--btn de navegação-->
-            <div class="slider_content">
-                <input type="radio" name="btn_radio" id="slide1">
-                <input type="radio" name="btn_radio" id="slide2">
-                <input type="radio" name="btn_radio" id="slide3">
-                <input type="radio" name="btn_radio" id="slide4">
-                <input type="radio" name="btn_radio" id="slide5">
-                <input type="radio" name="btn_radio" id="slide6">
-
-                <!--galeria de img-->
-
-                <div class="slide_box one">
-                    <img class="img" src="./assets/img/landing_page/slider/img1.png" alt="slide1">
-                </div>
-
-                <div class="slide_box">
-                    <img class="img" src="./assets/img/landing_page/slider/img2.png" alt="slide2">
-                </div>
-
-                <div class="slide_box">
-                    <img class="img" src="./assets/img/landing_page/slider/img3.png" alt="slide3">
-                </div>
-
-                <div class="slide_box">
-                    <img class="img" src="./assets/img/landing_page/slider/img4.png" alt="slide4">
-                </div>
-
-                <div class="slide_box">
-                    <img class="img" src="./assets/img/landing_page/slider/img5.png" alt="slide5">
-                </div>
-
-                <div class="slide_box">
-                    <img class="img" src="./assets/img/landing_page/slider/img6.png" alt="slide6">
-                </div>
-
-                <!--FIM galeria-->
-
-                <!--navegação automática-->
-
-                <div class="nav_auto">
-                    <div class="auto_btn1"></div>
-                    <div class="auto_btn2"></div>
-                    <div class="auto_btn3"></div>
-                    <div class="auto_btn4"></div>
-                    <div class="auto_btn5"></div>
-                    <div class="auto_btn6"></div>
-                </div>
-
-                <!--navegação manual-->
-
-                <div class="nav_manual">
-                    <label for="slide1" class="manual_btn"></label> <!-- as labels farão referencia aos inputs-->
-                    <label for="slide2" class="manual_btn"></label>
-                    <label for="slide3" class="manual_btn"></label>
-                    <label for="slide4" class="manual_btn"></label>
-                    <label for="slide5" class="manual_btn"></label>
-                    <label for="slide6" class="manual_btn"></label>
-                </div>
+    <!-- End Header -->
 
 
-                <!--FIM Slider_content-->
+    <!--Start btns-->
+    <div class="btn_nav">
+
+        <!--Start btn login-->
+        <div class="login">
+            <button class="login_btn" type="button" name="button">
+                <a href="#"><i class="fa-solid fa-user"></i><span>Login</span></a>
+            </button>
+        </div>
+        <!--End btn login-->
+
+        <!--Start btn cadastro-->
+        <div class="cadastro">
+            <button class="cadastro_btn" type="button" name="button">
+                <a href="#"><i class="fa-solid fa-address-card"></i><span>Cadastro</span></a>
+            </button>
+        </div>
+        <!--End btn cadastro-->
+
+    </div>
+    <!--End btns-->
+
+
+    <main>
+
+        <!-- Start galeria -->
+        <div id="slider">
+            <img class="selected" src="./assets/img/landing_page/slider/img1.png" alt="">
+            <img src="./assets/img/landing_page/slider/img2.png" alt="">
+            <img src="./assets/img/landing_page/slider/img3.png" alt="">
+            <img src="./assets/img/landing_page/slider/img4.png" alt="">
+            <img src="./assets/img/landing_page/slider/img5.png" alt="">
+            <img src="./assets/img/landing_page/slider/img6.png" alt="">
+        </div>
+        <!-- End galeria -->
+
+        <!--conteudo1-->
+        <div class="conteudo">
+            <p class="conteudo_texto">
+                Não vendemos beleza, não vendemos bem-estar, somos o meio pelo qual essas coisas podem ser alcançadas!
+            </p>
+        </div>
+
+
+
+
+        <!---------------------------------------------------->
+        <!--Start depoimento-->
+        <div class="slider_depoimento">
+
+            <!--Depoimento 1-->
+            <div class="depoimento_selected">
+                <img src="./assets/img/landing_page/cards/h2.svg" alt="">
+                <p class="titulo">"Depoimento 1"</p>
+                <p class="texto">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+            </div>
+            <!--Depoimento 2-->
+            <div class="depoimento">
+                <img src="./assets/img/landing_page/cards/m2.svg" alt="">
+                <p class="titulo">"Depoimento 2"</p>
+                <p class="texto">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+            </div>
+            <!--Depoimento 3-->
+            <div class="depoimento">
+                <img src="./assets/img/landing_page/cards/h2.svg" alt="">
+                <p class="titulo">"Depoimento 3"</p>
+                <p class="texto">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
+            </div>
+            <!--Depoimento 4-->
+            <div class="depoimento">
+                <img src="./assets/img/landing_page/cards/m2.svg" alt="">
+                <p class="titulo">"Depoimento 4"</p>
+                <p class="texto">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                </p>
             </div>
 
-        </section>
-        <!--FIM da section slider-->
 
-        <section class="cards">
-            <h2>Cards</h2>
-            <img class="card" src="./assets/img/landing_page/users/h3.svg" alt="">
-            <img class="card" src="./assets/img/landing_page/users/m3.svg" alt="">
-            <img class="card" src="./assets/img/landing_page/users/h3.svg" alt="">
-            <img class="card" src="./assets/img/landing_page/users/m3.svg" alt="">
-        </section>
+        </div>
 
-        <!--Section Bottom-->
+        <!--End depoimento-->
+
+        <div class="conteudo2">
+            <p class="conteudo_texto">
+                Conheça os nossos destaques:
+            </p>
+        </div>
+
+
+        <!-- Start profile card -->
+        <!--card1-->
+        <div class="card">
+            <div class="card_profile">
+                <div class="card_img">
+                    <img src="./assets/img/landing_page/cards/wallpaper1.png" alt="">
+                </div>
+                <div class="profile_img">
+                    <img src="./assets/img/landing_page/cards/m3.svg" alt="">
+                </div>
+                <div class="card_contet">
+                    <h3>Nome_Colaborador(a)</h3>
+                    <p>
+                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos,
+                        e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de
+                        tipos e os embaralhou para fazer um livro de modelos de tipos.
+                    </p>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="./assets/img/landing_page/cards/agenda.svg" width="40px" height="40px"></a>
+                    <a href="#"><img src="./assets/img/landing_page/cards/galeria.svg" width="40px" height="40px"></a>
+                    <a href="#"><img src="./assets/img/landing_page/cards/msg.svg" width="40px" height="40px"></a>
+                    <a href="#"><img src="./assets/img/landing_page/cards/avaliacao.svg" width="40px" height="40px"></a>
+                </div>
+
+            </div>
+
+            <!--card2-->
+            <div class="card_profile2">
+                <div class="card_img">
+                    <img src="./assets/img/landing_page/cards/wallpaper1.png" alt="">
+                </div>
+                <div class="profile_img">
+                    <img src="./assets/img/landing_page/cards/h3.svg" alt="">
+                </div>
+                <div class="card_contet">
+                    <h3>Nome_Colaborador(a)</h3>
+                    <p>
+                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos,
+                        e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de
+                        tipos e os embaralhou para fazer um livro de modelos de tipos.
+                    </p>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="./assets/img/landing_page/cards/agenda.svg" width="40px" height="40px"></a>
+                    <a href="#"><img src="./assets/img/landing_page/cards/galeria.svg" width="40px" height="40px"></a>
+                    <a href="#"><img src="./assets/img/landing_page/cards/msg.svg" width="40px" height="40px"></a>
+                    <a href="#"><img src="./assets/img/landing_page/cards/avaliacao.svg" width="40px" height="40px"></a>
+                </div>
+
+            </div>
+
+            <!--card3-->
+            <div class="card_profile3">
+                <div class="card_img">
+                    <img src="./assets/img/landing_page/cards/wallpaper1.png" alt="">
+                </div>
+                <div class="profile_img">
+                    <img src="./assets/img/landing_page/cards/m3.svg" alt="">
+                </div>
+                <div class="card_contet">
+                    <h3>Nome_Colaborador(a)</h3>
+                    <p>
+                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos,
+                        e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de
+                        tipos e os embaralhou para fazer um livro de modelos de tipos.
+                    </p>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="./assets/img/landing_page/cards/agenda.svg" width="40px" height="40px"></a>
+                    <a href="#"><img src="./assets/img/landing_page/cards/galeria.svg" width="40px" height="40px"></a>
+                    <a href="#"><img src="./assets/img/landing_page/cards/msg.svg" width="40px" height="40px"></a>
+                    <a href="#"><img src="./assets/img/landing_page/cards/avaliacao.svg" width="40px" height="40px"></a>
+                </div>
+
+            </div>
+
+            <!--card4-->
+            <div class="card_profile4">
+                <div class="card_img">
+                    <img src="./assets/img/landing_page/cards/wallpaper1.png" alt="">
+                </div>
+                <div class="profile_img">
+                    <img src="./assets/img/landing_page/cards/h3.svg" alt="">
+                </div>
+                <div class="card_contet">
+                    <h3>Nome_Colaborador(a)</h3>
+                    <p>
+                        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos,
+                        e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de
+                        tipos e os embaralhou para fazer um livro de modelos de tipos.
+                    </p>
+                </div>
+                <div class="icons">
+                    <a href="#"><img src="./assets/img/landing_page/cards/agenda.svg" width="40px" height="40px"></a>
+                    <a href="#"><img src="./assets/img/landing_page/cards/galeria.svg" width="40px" height="40px"></a>
+                    <a href="#"><img src="./assets/img/landing_page/cards/msg.svg" width="40px" height="40px"></a>
+                    <a href="#"><img src="./assets/img/landing_page/cards/avaliacao.svg" width="40px" height="40px"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- End profile card -->
+        <!---------------------------------------------------->
+
+        <!-- Start section bottom-->
         <section class="main_bottom">
             <div class="section_img_left">
                 <img src="./assets/img/landing_page/header/img1.png" width="250" height="250">
@@ -117,14 +258,25 @@
                 <img src="./assets/img/landing_page/header/img2.png" width="250" e height="250">
             </div>
         </section>
-        <!-- FIM Section Bottom(baixo)-->
+        <!-- End section bottom(baixo)-->
     </main>
 
-    <!--Rodapé-->>
+    <!-- Start rodapé-->
     <footer class="rodape">
 
-    </footer>
+        <div class="footer_left">
+            <a href="#">Contato</a>
+            <a href="#">Termo de serviço</a>
+            <a href="#">Politica de privacidade</a>
+            <a href="#">Quem Somos</a>
+        </div>
 
+        <div class="footer_rigth">
+            <span>Campo de mensagem</span>
+        </div>
+
+    </footer>
+    <!-- End rodapé-->
 
 </body>
 
