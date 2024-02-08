@@ -265,14 +265,24 @@
     <footer class="rodape">
 
         <div class="footer_left">
-            <a href="#">Contato</a>
             <a href="#">Termo de serviço</a>
             <a href="#">Politica de privacidade</a>
             <a href="#">Quem Somos</a>
         </div>
 
         <div class="footer_rigth">
-            <span>Campo de mensagem</span>
+
+            <!--Start contato-->
+            <div class="contact-form">
+                <h2>Contato</h2>
+                <form class="contact" action="" method="post">
+                    <input type="text" name="name" class="text-box" placeholder="Seu nome" required>
+                    <input type="email" name="email" class="text-box" placeholder="Seu e-mail" required>
+                    <textarea name="message" rows="5" placeholder="Digite sua mensagem" required></textarea>
+                    <input type="submit" name="submit" class="enviar-btn" value="Enviar">
+                </form>
+            </div>
+            <!--End contato-->
         </div>
 
     </footer>
