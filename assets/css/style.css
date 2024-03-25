@@ -1,4 +1,34 @@
-@import './all.css';
+/*------------Reset-------------*/
+/*----Start-----*/
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body,
+main {
+    font-size: 100%;
+    background-image:
+        linear-gradient(to top, #f064a3, #a97cdf);
+}
+
+/*
+Cor usada nos icones:
+
+div {
+    background: linear-gradient(to bottom, #ff66cc 0%, #9933ff 100%);
+}
+ sobreamento:
+
+ box-shadow: 0 0 25px 0 rgba(51, 58, 69, 0.5);
+
+*/
+/*-----End-----*/
 
 /*----------------------------------------------------- Header de navegação-----------------------------------------------------*/
 
