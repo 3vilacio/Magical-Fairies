@@ -163,6 +163,14 @@ header {
     box-shadow: 0 0 20px 0 rgba(250, 203, 239, 0.4);
 }
 
+.login_btn a {
+    text-decoration: none;
+}
+
+.cadastro_btn a {
+    text-decoration: none;
+}
+
 .cadastro_btn i {
     z-index: 1;
     background: #a97cdf;
@@ -205,6 +213,7 @@ header {
     transition-duration: 0.8s;
     transition-property: transform;
 }
+
 
 .login i:hover {
     transform: scale(1.1);
@@ -375,8 +384,8 @@ main {
 .titulo {
     font-size: 20px;
     margin-left: 2%;
+    margin-top: 2%;
     padding: 2px;
-
 }
 
 .texto {
@@ -388,7 +397,7 @@ main {
 }
 
 /*-----------------------------------------------------Profile_card-----------------------------------------------------*/
-.card {
+.cards {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -402,13 +411,13 @@ main {
 .card_profile3,
 .card_profile4 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     width: 100%;
     max-width: 300px;
     height: 15%;
-    max-height: 400px;
+    max-height: 420px;
     background: #eee;
     margin-top: 50px;
     margin-bottom: 10%;
@@ -547,6 +556,7 @@ main {
     font-size: 20px;
     margin-left: 10px;
     font-style: italic;
+    text-decoration: none;
 }
 
 .footer_left a:hover {

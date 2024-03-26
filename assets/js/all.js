@@ -1,4 +1,4 @@
-/* Efeito Carrossel  da página index*/
+/* Start Efeito Carrossel  da página index*/
 
 let time = 4000,
     currentImageIndex = 0,
@@ -32,5 +32,7 @@ function start() {
 
 window.addEventListener("load", start) // quando a window for totalmente carreda, vai ser dado o start
 
-/*Efeito carrosel dos depoimentos*/
+/* End Efeito carrosel dos depoimentos*/
+
+
 
